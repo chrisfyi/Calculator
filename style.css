@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-size: 24px;
+  font-family: 'Unica One', cursive;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0;
+  
+  
+}
+
+#app h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 8px;
+  color: black;
+}
+
+.calculator{
+    display:grid;
+    height:650px;
+    width:500px;
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 1em;
+    border-radius: .5em;
+
+}
+
+.display{
+    display:grid;
+    grid-column: 1/6;
+    grid-row:1/4;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    height:160px;
+    background-color:teal;
+    border: 3px solid black;
+    padding: .5em ; border:2px solid black; border-radius: .5em;
+    box-shadow: inset 1px 1px 1px 1px black;
+}
+
+.held-label{
+    font-size: 26px;
+    font-weight: 800;
+    font-style: italic;
+    color: black;
+    text-decoration: underline;
+}
+
+
+.controls{
+    display:grid;
+    grid-row:2/10;
+    grid-column: 1/6;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    
+}
+
+.memory{
+    display:grid;
+    grid-row:2/4;
+    grid-column: 1/6;
+    grid-gap: 12px;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 20px;
+    
+}
+
+.memory button{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 600;
+    background-color: rgb(255, 234, 189);
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: inset 1px 1px 1px 1px black;
+}
+
+.digits{
+    grid-column: 1 / 4;
+    grid-row: 3/ 6;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+
+.digits button{
+    font-size: 20px;
+    font-style: italic;
+    font-weight:600;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: inset 1px 1px 1px 1px black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(250, 203, 213);
+}
+
+.operations{
+    display:grid;
+    grid-column: 4/6;
+    grid-row: 2/6;
+    grid-gap:10px;
+    padding-left:12px;
+}
+
+.operations button{
+    background-color: rgb(253, 191, 132);
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: italic;
+    font-weight:600;
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: inset 1px 1px 1px 1px black;
+}
+
+   .operations .equals{ 
+       background-color:rgb(252, 130, 130);
+}
